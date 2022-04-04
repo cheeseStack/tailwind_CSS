@@ -528,6 +528,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.25rem;
 }
 
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
+}
+
 .block{
   display: block;
 }
@@ -584,6 +592,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -594,6 +606,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-b{
   border-bottom-width: 1px;
+}
+
+.border-r-4{
+  border-right-width: 4px;
+}
+
+.border-none{
+  border-style: none;
 }
 
 .border-green-600{
@@ -609,6 +629,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-gray-200{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-gray-200{
@@ -655,8 +680,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.5rem;
 }
 
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .font-body{
@@ -676,6 +715,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -801,6 +845,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .tablet\:col-span-3{
     grid-column: span 3 / span 3;
+  }
+
+  .tablet\:flex{
+    display: flex;
   }
 
   .tablet\:h-32{
