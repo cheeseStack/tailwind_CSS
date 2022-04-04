@@ -8,8 +8,8 @@
 </head>
 <body class="text-gray-600 font-body ">
 
-    <div><!-- content wrapper -->
-        <div><!-- nav wrapper start-->
+    <div class="grid tablet:grid-cols-3"><!-- content wrapper -->
+        <div class="tablet:col-span-1"><!-- nav wrapper start-->
             <nav><!-- nav bar start-->
                 <div><!-- title div start-->
                     <h1 class="font-bold uppercase p-4 border-b border-gray-250">
@@ -40,7 +40,7 @@
             </nav><!-- nav bar end-->
         </div><!-- nav wrapper end-->
 
-        <main class="px-16 py-6 bg-gray-200"><!--main content in top right-->
+        <main class="tablet:col-span-2 px-16 py-6 bg-gray-200" ><!--main content in top right-->
             <div class="flex justify-center tablet:justify-end"><!-- login & sign up links start-->
                 <a href="#" class="text-primary">Log in</a>
                 <a href="#" class="text-primary ml-4">Sign Up</a>
@@ -63,8 +63,8 @@
             <div><!-- cards section for recipes @start-->
 
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
-
-                <div class="mt-8">
+                
+                <div class="grid tablet:grid-cols-2 laptop:grid-cols-3 gap-10 mt-8 "><!--Overall card container to apply Grid-->
                     <!-- Cards for Latest Recipes @start-->
                     <div class="card" ><!-- 1st card @start-->
                         <img src="img/stew.jpg" alt="stew" class="w-full h-32 tablet:h-32 object-cover"><!-- recipe image to go here -->
@@ -103,6 +103,7 @@
                 </div><!-- Cards for Latest Recipes @end-->
 
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+                
                 <div class="mt-8"><!-- Cards for Most Popular @start-->
 
                     <div><!-- 1st card @start-->

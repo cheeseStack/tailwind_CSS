@@ -2,6 +2,7 @@ module.exports = {
   content: [
     "./dist/**/*.{html,js}",
     "./index.html.{html,js}",
+    "./test.html.{html,js}",
     "./src/**/*.{html,js}"
   ],
   theme: {
@@ -39,6 +40,20 @@ module.exports = {
       body: ['Nunito'],
       }
     },
+    gridTemplateColumns: {
+      // Simple 16 column grid
+      '2': 'repeat(2, minmax(0, 1fr))',
+      '3': 'repeat(3, minmax(0, 1fr))',
+      '4': 'repeat(4, minmax(0, 1fr))',
+      '5': 'repeat(5, minmax(0, 1fr))',
+      '6': 'repeat(6, minmax(0, 1fr))',
+      '8': 'repeat(8, minmax(0, 1fr))',
+      '12': 'repeat(12, minmax(0, 1fr))',
+      '16': 'repeat(16, minmax(0, 1fr))',
+
+      // Complex site-specific column configuration
+      'footer': '200px minmax(900px, 1fr) 100px',
+    }
   },
   plugins: [],
 }

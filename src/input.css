@@ -9,5 +9,9 @@
 }
 
 .badge {
-    @apply bg-secondary-100 text-secondary-200 text-sm uppercase font bold rounded-full p-2 absolute top-0 ml-2 mt-2;
+    @apply bg-secondary-100 text-secondary-200 text-sm uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2;
+}
+
+.grid {
+    max-width: 1380px;
 }
