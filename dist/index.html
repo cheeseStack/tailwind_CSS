@@ -9,14 +9,19 @@
 <body class="text-gray-600 font-body ">
 
     <div class="grid tablet:grid-cols-4"><!-- content wrapper -->
+
+        <!-- 1st part: nav -->
         <div class="tablet:col-span-1 tablet:flex tablet:justify-end"><!-- nav wrapper start-->
             <nav class="text-right"><!-- nav bar start-->
-                <div><!-- title div start-->
+                <div class="flex justify-between items-center"><!-- title div start-->
                     <h1 class="font-bold uppercase p-4 border-b border-gray-250">
                         <a href="/" class="hover:text-gray-800">Food Ninja</a>
                     </h1>
+                    <div class="px-4 cursor-pointer tablet:hidden" id="burger"><!-- container for mobile burger menu icon-->
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" style="user-select: auto;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" style="user-select: auto;" /></svg>
+                    </div>
                 </div><!-- title div end-->
-                <ul class="mt-6 text-lg"><!-- links, eg. home, about, contact, etc.-->
+                <ul class="mt-6 text-lg hidden tablet:block" id="menu"><!-- links, eg. home, about, contact, etc.-->
                     <li class="text-gray-700 font-bold py-1"><!-- 1st nav item-->
                         <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
                             <span>Home</span>
@@ -42,8 +47,10 @@
                 </ul>
             </nav><!-- nav bar end-->
         </div><!-- nav wrapper end-->
+        <!-- END 1st part: nav -->
 
-        <main class="tablet:col-span-3 px-16 py-6 bg-gray-200" ><!--main content in top right-->
+        <!-- 2nd part: main (recipes) -->
+        <main class="tablet:col-span-3 px-16 py-6 bg-gray-100 rounded overflow-hidden shadow-md" ><!--main content in top right-->
             <div class="flex justify-center tablet:justify-end"><!-- login & sign up links start-->
                 <a href="#" class="btn border-green-600 tablet:border text-green-600 hover:bg-green-600 hover:text-white">Log in</a>
                 <a href="#" class="btn border-primary tablet:border text-primary ml-4 hover:bg-primary hover:text-white" >Sign Up</a>
@@ -128,5 +135,8 @@
 
         </main>
     </div> 
+
+    <!-- JS script to contol the mobile burger icon and menus -->
+    <script src="index.js"></script>
 </body>
 </html>
