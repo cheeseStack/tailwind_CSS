@@ -564,24 +564,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1.5rem;
 }
 
-.h-4{
-  height: 1rem;
+.h-52{
+  height: 13rem;
 }
 
-.h-8{
-  height: 2rem;
-}
-
-.h-12{
-  height: 3rem;
+.h-5{
+  height: 1.25rem;
 }
 
 .h-32{
   height: 8rem;
 }
 
-.h-5{
-  height: 1.25rem;
+.h-2{
+  height: 0.5rem;
+}
+
+.h-10{
+  height: 2.5rem;
+}
+
+.h-full{
+  height: 100%;
 }
 
 .w-6{
@@ -636,6 +640,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.25rem;
 }
 
+.border{
+  border-width: 1px;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
@@ -669,21 +677,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.bg-red-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
-.bg-blue-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
-.bg-green-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
-}
-
 .bg-secondary-100{
   --tw-bg-opacity: 1;
   background-color: rgb(226 226 213 / var(--tw-bg-opacity));
@@ -694,13 +687,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
+.bg-green-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#f46225\]{
   --tw-bg-opacity: 1;
   background-color: rgb(244 98 37 / var(--tw-bg-opacity));
-}
-
-.bg-\[color\:var\(--primary\)\]{
-  background-color: var(--primary);
 }
 
 .bg-\[color\:var\(--primary1\)\]{
@@ -878,6 +872,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .card{
   position: relative;
+  height: auto;
   overflow: hidden;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
@@ -1045,12 +1040,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px){
-  .tablet\:col-span-1{
-    grid-column: span 1 / span 1;
+  .tablet\:col-span-2{
+    grid-column: span 2 / span 2;
   }
 
-  .tablet\:col-span-3{
-    grid-column: span 3 / span 3;
+  .tablet\:col-span-8{
+    grid-column: span 8 / span 8;
+  }
+
+  .tablet\:col-span-10{
+    grid-column: span 10 / span 10;
   }
 
   .tablet\:block{
@@ -1069,8 +1068,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 8rem;
   }
 
-  .tablet\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .tablet\:h-52{
+    height: 13rem;
+  }
+
+  .tablet\:h-40{
+    height: 10rem;
+  }
+
+  .tablet\:h-44{
+    height: 11rem;
+  }
+
+  .tablet\:h-60{
+    height: 15rem;
+  }
+
+  .tablet\:grid-cols-12{
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .tablet\:grid-cols-2{
@@ -1087,7 +1102,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px){
+  .laptop\:col-span-8{
+    grid-column: span 8 / span 8;
+  }
+
   .laptop\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .laptop\:grid-cols-12{
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
 }
+
+

@@ -4,115 +4,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="output.css" rel="stylesheet">
-    <title>Tailwind CSS</title>
+    <title>Tailwind CSS Template</title>
 </head>
 <body class="text-gray-600 font-body ">
 
-    <div class="grid tablet:grid-cols-4"><!-- content wrapper -->
+    <div class="grid tablet:grid-cols-12 laptop:grid-cols-12"><!-- content wrapper -->
 
         <!-- 1st part: nav -->
-        <div class="tablet:col-span-1 tablet:flex tablet:justify-end"><!-- nav wrapper start-->
+        <div class="tablet:col-span-2 tablet:flex tablet:justify-end"><!-- nav wrapper start-->
             <nav class="text-right"><!-- nav bar start-->
                 <div class="flex justify-between items-center"><!-- title div start-->
                     <h1 class="font-bold uppercase p-4 border-b border-gray-250">
-                        <a href="/" class="hover:text-gray-800">Food Ninja</a>
+                        <a href="/" class="hover:text-gray-800">NAME / TITLE</a>
                     </h1>
+                    <!-- Below: burger menu, only shown on mobiles -->
                     <div class=" flex px-4 cursor-pointer tablet:hidden align-center" id="burger"><!-- container for mobile burger menu icon-->
                         <span class="pr-1 text-sm mt-1">Menu</span><svg class="w-6 h-6" fill="none" stroke="currentColor" style="user-select: auto;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" style="user-select: auto;" /></svg>
                     </div>
                 </div><!-- title div end-->
                 <ul class="mt-6 text-lg hidden tablet:block" id="menu"><!-- links, eg. home, about, contact, etc.-->
                     <li class="text-gray-700 font-bold py-1"><!-- 1st nav item-->
-                        <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-primary"><!--red border shows current page -->
                             <span>Home</span>
                             <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" style="user-select: auto;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" style="user-select: auto;" /></svg>
                             
                         </a>
                     </li><!-- 1st nav item end-->
+
                     <li class="py-1"><!-- 2nd nav item start-->
-                        <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white"><!-- white border to keep nav items aligned -->
                             <span>About</span>
                             <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" style="user-select: auto;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" style="user-select: auto;" /></svg>
-                            
                         </a>
                     </li><!-- 2nd nav item end-->
-                    <li class="py-1"><!-- 3rd nav item-->
-                        <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+
+                    <li class="py-1"><!-- 3rd nav item start-->
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white"><!-- white border to keep nav items aligned -->
                             <span>Contact</span>
                             <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" style="user-select: auto;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" style="user-select: auto;" /></svg>
-                    
                         </a>
                     </li><!-- 3rd nav item end-->
+
+                    <li class="py-1"><!-- 4th nav item start-->
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white"><!-- white border to keep nav items aligned -->
+                            <span>Nav Item 4</span>
+                            <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" style="user-select: auto;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" style="user-select: auto;" /></svg>
+                        </a>
+                    </li><!-- 4th nav item end-->
+
+                    <li class="py-1"><!-- 5th nav item start-->
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white"><!-- white border to keep nav items aligned -->
+                            <span>Nav Item 5</span>
+                            <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" style="user-select: auto;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" style="user-select: auto;" /></svg>
+                        </a>
+                    </li><!-- 5th nav item end-->
+
+                    <li class="py-1"><!-- 6th nav item start-->
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white"><!-- white border to keep nav items aligned -->
+                            <span>Nav Item 6</span>
+                            <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" style="user-select: auto;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" style="user-select: auto;" /></svg>
+                        </a>
+                    </li><!-- 6th nav item end-->
 
                 </ul>
             </nav><!-- nav bar end-->
         </div><!-- nav wrapper end-->
         <!-- END 1st part: nav -->
 
-        <!-- 2nd part: main (recipes) -->
-        <main class="tablet:col-span-3 px-16 py-6 bg-gray-100 rounded overflow-hidden shadow-md" ><!--main content in top right-->
-            <div class="flex justify-center tablet:justify-end"><!-- login & sign up links start-->
+        <!-- 2nd part: main section with cards and signup and login (top right)-->
+        <main class="tablet:col-span-10 laptop:col-span-8 px-16 py-6 bg-gray-100 rounded overflow-hidden shadow-md" ><!--main content in top right-->
+            <!-- Below: login & sign up links start-->
+            <div class="flex justify-center tablet:justify-end">
                 <a href="#" class="btn border-green-600 tablet:border text-green-600 hover:bg-green-600 hover:text-white transition ease-out duration-500">Log in</a>
                 <a href="#" class="btn border-primary tablet:border text-primary ml-4 hover:bg-primary hover:text-white transition ease-out duration-500" >Sign Up</a>
             </div><!-- login & sign up links end-->
 
-            <!-- test start to show flex-box-->
-            <!-- <div class="flex items-center"> -->
-                <!-- <div class="bg-red-500 h-4 w-6"></div>
-                <div class="bg-blue-500 h-8 w-6"></div>
-                <div class="bg-green-500 h-12 w-6"></div> -->
-            <!-- </div> -->
-            <!-- test start to show flex-box -->
-
+            <!-- Main body start -->
             <header><!-- header for the title start -->
-                <h2 class="text-gray-700 text-6xl font-semi-bold">Recipes</h2>
-                <h3 class="text-2xl font-semi-bold">For Ninjas</h3>
+                <h2 class="text-gray-700 text-6xl font-semi-bold">#TITLE</h2>
+                <h3 class="text-2xl font-semi-bold">#Subtitle</h3>
             </header><!-- header for the title end -->
 
             <!-- Below: cards section for the different recipes -->
             <div><!-- cards section for recipes @start-->
 
-                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">#Heading</h4>
                 
+                <!-- Below: grid container for main section cards -->
                 <div class="grid tablet:grid-cols-2 laptop:grid-cols-3 gap-10 mt-8 "><!--Overall card container to apply Grid-->
                     <!-- Cards for Latest Recipes @start-->
+                    <!-- Cards below are entered manually; could use @foreach with PHP and db -->
                     <div class="card" ><!-- 1st card @start-->
-                        <img src="img/stew.jpg" alt="stew" class="w-full h-32 tablet:h-32 object-cover"><!-- recipe image to go here -->
+                        <img src="img/stew.jpg" alt="stew" class="w-full h-full tablet:h-52 object-cover"><!-- recipe image to go here -->
                         <div class="m-4">
-                            <span class="font-bold">5 Bean Chilli Stew</span>
-                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                            <span class="font-bold">#card title</span>
+                            <span class="block text-gray-500 text-sm">#tagline</span>
                         </div>
-                        <div class="badge">
-                            <svg class="w-5 h-5 inline-block mr-1" fill="none" stroke="currentColor" style="user-select: auto;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" style="user-select: auto;" /></svg><span>25 mins</span>
+                        <div class="badge"><!--image in top left corner-->
+                            <svg class="w-5 h-5 inline-block mr-1" fill="none" stroke="currentColor" style="user-select: auto;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" style="user-select: auto;" /></svg><span>#badge wording</span>
                         </div>
                     </div>
                     <!-- 1st card @end-->
                     <div class="card" ><!-- 2nd card @start-->
-                        <img src="img/noodles.jpg" alt="noodles" class="w-full h-32 tablet:h-32 object-cover"><!-- recipe image to go here -->
+                        <img src="img/noodles.jpg" alt="noodles" class="w-full h-32 tablet:h-52 object-cover"><!-- recipe image to go here -->
                         <div class="m-4">
-                            <span class="font-bold">Veg Noodles</span>
-                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                            <span class="font-bold">#card title</span>
+                            <span class="block text-gray-500 text-sm">#tagline</span>
                         </div>
                         <div class="badge">
-                            <svg class="w-5 h-5 inline-block mr-1" fill="none" stroke="currentColor" style="user-select: auto;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" style="user-select: auto;" /></svg><span>25 mins</span>
+                            <svg class="w-5 h-5 inline-block mr-1" fill="none" stroke="currentColor" style="user-select: auto;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" style="user-select: auto;" /></svg><span>#badge wording</span>
                         </div>
                     </div>
                     <!-- 2nd card @end-->
                     <div class="card" ><!-- 3rd card @start-->
-                        <img src="img/curry.jpg" alt="curry" class="w-full h-32 tablet:h-32 object-cover"><!-- recipe image to go here -->
+                        <img src="img/curry.jpg" alt="curry" class="w-full h-32 tablet:h-52 object-cover"><!-- recipe image to go here -->
                         <div class="m-4">
-                            <span class="font-bold">Tofu Curry</span>
-                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                            <span class="font-bold">#card title</span>
+                            <span class="block text-gray-500 text-sm">#tagline</span>
                         </div>
                         <div class="badge">
-                            <svg class="w-5 h-5 inline-block mr-1" fill="none" stroke="currentColor" style="user-select: auto;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" style="user-select: auto;" /></svg><span>25 mins</span>
+                            <svg class="w-5 h-5 inline-block mr-1" fill="none" stroke="currentColor" style="user-select: auto;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" style="user-select: auto;" /></svg><span>#badge wording</span>
                         </div>
                     </div>
                     <!-- 3rd card @end-->
                     <!-- MORE CARDS TO GO HERE LATER -->
                 </div><!-- Cards for Latest Recipes @end-->
 
-                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">#2nd Heading</h4>
                 
                 <div class="mt-8"><!-- Cards for Most Popular @start-->
 
@@ -120,16 +138,17 @@
                         <img src="img/stew.jpg" alt="stew"><!-- recipe image to go here -->
                     </div>
                     <div>
-                        <span>5 Bean Chilli Stew</span>
-                        <span>Recipe by Mario</span>
+                        <span class="font-bold"># card title</span>
+                        <span class="block">#tagline</span>
                     </div><!-- 1st card @end-->
                     <!-- MORE CARDS TO GO HERE LATER -->
                 </div><!-- Cards for Most Popular @end-->
 
                 <div class="flex justify-center"><!-- buttons section for more stuff-->
-                    <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-400">
-                        See more recipes
-                    </div>
+                    <a href="#">
+                        <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-400">
+                        # link to something</div>
+                </a>
                 </div>
             </div><!-- cards section for recipes @end-->
 
