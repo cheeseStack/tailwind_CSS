@@ -1,4 +1,6 @@
 module.exports = {
+  mode: 'jit',
+  // purge: ['./*.html'],
   content: [
     "./dist/**/*.{html,js}",
     "./index.html.{html,js}",
